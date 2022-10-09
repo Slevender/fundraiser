@@ -1,0 +1,11 @@
+/* ==========================================================================
+Sale item styles
+========================================================================== */
+
+.grayed {
+  -webkit-filter: grayscale(100%) contrast(30%);
+  -moz-filter: grayscale(100%) contrast(30%);
+  -o-filter: grayscale(100%) contrast(30%);
+  -ms-filter: grayscale(100%) contrast(30%);
+  filter: grayscale(100%) contrast(30%);
+}

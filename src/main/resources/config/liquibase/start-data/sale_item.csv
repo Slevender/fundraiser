@@ -1,0 +1,10 @@
+id;name;price;quantity;type;image;image_content_type
+1;Brownie;0.65;48;EDIBLE;../start-data/blob/brownie.png;image/png
+2;Muffin;1.00;36;EDIBLE;../start-data/blob/muffin.png;image/png
+3;Cake Pop;1.35;24;EDIBLE;../start-data/blob/cake-pop.png;image/png
+4;Apple tart;1.50;60;EDIBLE;../start-data/blob/apple-tart.png;image/png
+5;Water;1.50;30;EDIBLE;../start-data/blob/water-bottle.png;image/png
+6;Shirt;2.00;0;SECOND_HAND_ITEM;../start-data/blob/shirt.png;image/png
+7;Pants;3.00;0;SECOND_HAND_ITEM;../start-data/blob/pants.png;image/png
+8;Jacket;4.00;0;SECOND_HAND_ITEM;../start-data/blob/jacket.png;image/png
+9;Toy;1.00;0;SECOND_HAND_ITEM;../start-data/blob/toy.png;image/png

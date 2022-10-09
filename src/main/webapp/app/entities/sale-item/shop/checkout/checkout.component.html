@@ -1,0 +1,44 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="checkoutLabel" *ngIf="basket">
+    <span class="text-capitalize">Checkout</span>
+  </h4>
+
+  <button aria-label="Close" data-dismiss="modal" class="btn-close" type="button" (click)="dismiss()"></button>
+</div>
+
+<div class="modal-body pad">
+  <div *ngIf="basket">
+    <div class="table-responsive">
+      <table class="table table-striped" aria-describedby="checkoutLabel">
+        <thead>
+          <tr>
+            <th scope="col" class="text-start">Name</th>
+            <th scope="col" class="text-start">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of basket">
+            <td class="text-start">{{ item.name }}</td>
+            <td class="text-start">{{ item.price | currency }} €</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="fa-pull-right">Total amount: {{ total | currency }} €</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <div>
+      <label class="form-label" for="cashPaid">Cash paid</label>
+      <input type="number" class="form-control" name="cashPaid" id="cashPaid" [(ngModel)]="cashPaid" />
+      <br />
+      <p>Amount to return: {{ cashPaid - total | currency }} €</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-footer">
+  <button data-dismiss="modal" class="btn btn-secondary float-start" type="button" (click)="dismiss()">Done</button>
+</div>
