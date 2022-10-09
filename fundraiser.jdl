@@ -1,0 +1,14 @@
+enum ItemType {
+    EDIBLE, SECOND_HAND_ITEM
+}
+
+entity SaleItem {
+	name String required
+    price BigDecimal required
+    quantity Integer
+    type ItemType required
+    image ImageBlob required
+}
+
+paginate SaleItem with infinite-scroll
+    
